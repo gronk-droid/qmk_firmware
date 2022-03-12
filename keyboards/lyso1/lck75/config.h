@@ -65,7 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define RGBLIGHT_SLEEP
 
-#define OLED_TIMEOUT 10000
+#define OLED_TIMEOUT 50000
 
 #define UNICODE_SELECTED_MODES UC_WINC, UC_MAC, UC_LNX
 

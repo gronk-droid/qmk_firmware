@@ -17,12 +17,30 @@
 bool encoder_update_kb(uint8_t index, bool clockwise) {
     if (!encoder_update_user(index, clockwise)) return false;
     if (index == 0) {
+
+        //volume control
+        // if (clockwise) {
+        //     tap_code(KC_VOLU);
+        // } else {
+        //     tap_code(KC_VOLD);
+        // }
+
+        //history scrubbing
         if (clockwise) {
-            tap_code(KC_VOLU);
+            tap_code16(C(KC_Y));
         } else {
-            tap_code(KC_VOLD);
+            tap_code16(C(KC_Z));
         }
+
+        //search result scrolling
+        // if (clockwise) {
+        //     tap_code(KC_F3);
+        // } else {
+        //     tap_code16(S(KC_F3));
+        // }
+
     }
+
     return true;
 }
 
@@ -134,10 +152,11 @@ static uint8_t current_tap_frame = 0;
 
         anim_sleep = timer_read32();
     } else {
-        if (timer_elapsed32(anim_sleep) > OLED_TIMEOUT) {
-            oled_off();
-        } else {
-            if (timer_elapsed32(anim_timer) > ANIM_FRAME_DURATION) {
+            if (timer_elapsed32(anim_sleep) > OLED_TIMEOUT) {
+                oled_off();
+            }
+    {
+        if (timer_elapsed32(anim_timer) > ANIM_FRAME_DURATION) {
                 anim_timer = timer_read32();
                 animation_phase();
             }
