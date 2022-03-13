@@ -27,4 +27,4 @@ WPM_ENABLE = yes
 LTO_ENABLE = no
 AUTO_SHIFT_ENABLE = no
 
-SRC += lck75_oled.c
+# SRC += lck75_oled.c
