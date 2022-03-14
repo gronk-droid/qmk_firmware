@@ -153,7 +153,7 @@ static uint8_t current_tap_frame = 0;
         anim_sleep = timer_read32();
     } else {
             if (timer_elapsed32(anim_sleep) > OLED_TIMEOUT) {
-                oled_off();
+                oled_on();
             }
     {
         if (timer_elapsed32(anim_timer) > ANIM_FRAME_DURATION) {
