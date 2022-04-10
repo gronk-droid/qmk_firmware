@@ -1,6 +1,6 @@
-# duckboard R1
+# duckboard R3
 
-An 18-key numpad with rotary encoder and OLED support. 
+An 21-key numpad with rotary encoder and OLED support. 
 
 * Keyboard Maintainer: [doodboard](https://www.doodboard.xyz)
 * Hardware Supported: duckboard PCB

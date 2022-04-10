@@ -22,7 +22,7 @@
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x4442 // doodboard
 #define PRODUCT_ID      0x6462 // duckboard
-#define DEVICE_VER      0x0001
+#define DEVICE_VER      0x0003
 #define MANUFACTURER    doodboard
 #define PRODUCT         duckboard
 #define DESCRIPTION     18 key numpad with rotary encoder and OLED support
@@ -36,8 +36,8 @@
 #define MATRIX_COL_PINS { F7, B1, B3, B2, B6 }
 #define UNUSED_PINS
 
-#define ENCODERS_PAD_A { F5 }
-#define ENCODERS_PAD_B { F6 }
+#define ENCODERS_PAD_A { F6 }
+#define ENCODERS_PAD_B { F5 }
 #define ENCODER_RESOLUTION 2
 
 /* media key slowdown for windows */
