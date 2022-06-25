@@ -17,9 +17,11 @@
 #ifndef KB_H
 #define KB_H
 
+#pragma once
+
 #include "quantum.h"
 
-#define KEYMAP( \
+#define LAYOUT( \
 	     K01, K02, K03, K04, \
 	     K11, K12, K13, K14, \
 	     K21, K22, K23, K24, \
@@ -32,5 +34,7 @@
 	{ K30,   K31,   K32,   K33,   K34 }, \
 	{ K40,   K41,   K42,   K43,   K44 }  \
 }
+
+#define LAYOUT_duckboard_r3 LAYOUT
 
 #endif
