@@ -1,4 +1,4 @@
-/* Copyright 2020-2021 doodboard
+/* Copyright 2020 doodboard
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,16 +14,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#pragma once
+#ifndef CONFIG_H
+#define CONFIG_H
 
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0x4442
-#define PRODUCT_ID      0x6462
-#define DEVICE_VER      0x0001
+#define VENDOR_ID       0x4442 // doodboard
+#define PRODUCT_ID      0x6462 // duckboard
+#define DEVICE_VER      0x0002
 #define MANUFACTURER    doodboard
 #define PRODUCT         duckboard
+#define DESCRIPTION     18 key numpad with rotary encoder and OLED support
 
 /* key matrix size */
 #define MATRIX_ROWS 5
@@ -56,5 +58,4 @@
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 1
+#endif
