@@ -46,6 +46,11 @@
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
+/* Tap Dance Timing */
+#ifdef TAP_DANCE_ENABLE
+#define TAPPING_TERM 175
+
+#endif
 /* number of backlight levels */
 
 /* ws2812 RGB LED */
